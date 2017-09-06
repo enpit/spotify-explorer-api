@@ -18,6 +18,7 @@
   "homepage": "https://github.com/enpit/spotify-explorer-api#readme",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "spotify-web-api-node": "^2.5.0"
   }
 }
