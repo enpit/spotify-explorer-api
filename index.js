@@ -24,6 +24,11 @@ const fetchToken = () => {
     });
 };
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 app.get('/', (req, res) => res.send('search, fetchAlbumsByArtist, fetchAlbumDetails'));
 
 app.get('/search/:artist', (req, res) =>
