@@ -29,7 +29,7 @@ app.get('/', (req, res) => res.send('search, fetchAlbumsByArtist, fetchAlbumDeta
 app.get('/search/:artist', (req, res) =>
   spotifyApi.searchArtists(req.params.artist)
   .then(function(data) {
-    res.send(data.body);
+    res.status(200).send(data.body);
   }, function(err) {
     res.status(400).send(err);
   })
@@ -38,7 +38,7 @@ app.get('/search/:artist', (req, res) =>
 app.get('/fetchAlbumsByArtist/:id', (req, res) =>
   spotifyApi.getArtistAlbums(req.params.id)
   .then(function(data) {
-    res.send(data.body);
+    res.status(200).send(data.body);
   }, function(err) {
     res.status(400).send(err);
   })
@@ -47,7 +47,7 @@ app.get('/fetchAlbumsByArtist/:id', (req, res) =>
 app.get('/fetchAlbumDetails/:id', (req, res) =>
   spotifyApi.getAlbum(req.params.id)
   .then(function(data) {
-    res.send(data.body);
+    res.status(200).send(data.body);
   }, function(err) {
     res.status(400).send(err);
   })
