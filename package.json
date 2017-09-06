@@ -1,0 +1,19 @@
+{
+  "name": "spotify-explorer-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enpit/spotify-explorer-api.git"
+  },
+  "author": "Janis Krasemann <krasemann.janis@gmail.com> (http://www.github.com/janis-kra)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enpit/spotify-explorer-api/issues"
+  },
+  "homepage": "https://github.com/enpit/spotify-explorer-api#readme"
+}
